@@ -1,13 +1,11 @@
 PROJECT_PLAN.md
 __tests__/placeholder.test.ts
 e2e/example.spec.ts
-e2e/blog.spec.ts
 eslint.config.mjs
 jest.config.ts
 jest.setup.ts
 next.config.ts
 playwright.config.ts
 src/app/page.tsx
-src/app/paper/page.tsx
 tailwind.config.js
 test-results

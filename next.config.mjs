@@ -1,19 +1,18 @@
 import withMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
 
-
 const withMdx = withMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm]
+    remarkPlugins: [remarkGfm],
   },
 });
 
 const nextConfig = {
   compiler: {
-    emotion: true
+    emotion: true,
   },
-  pageExtensions: ["ts", "tsx", "mdx"]
+  pageExtensions: ["ts", "tsx", "mdx"],
 };
 
 export default withMdx(nextConfig);
