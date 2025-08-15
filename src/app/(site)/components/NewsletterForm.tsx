@@ -9,7 +9,11 @@ const schema = z.object({
   hp: z.string().max(0).optional(),
 });
 
-export const NewsletterForm = () => {
+type NewsletterFormProps = {
+  source?: string;
+};
+
+export const NewsletterForm = ({ source }: NewsletterFormProps) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -36,7 +40,7 @@ export const NewsletterForm = () => {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source }),
       });
       if (res.ok) {
         setMessage("Thanks for subscribing!");

@@ -24,13 +24,13 @@ const resources: Resource[] = [
     title: "School Readiness Matrix",
     description: "Evaluate how prepared your school is for AI integration.",
     href: "/resources/school-readiness-matrix",
-  }
-  ,
+  },
   {
     title: "AI Safety SWOT Analysis",
-    description: "Identify strengths, weaknesses, opportunities and threats for AI in your context.",
+    description:
+      "Identify strengths, weaknesses, opportunities and threats for AI in your context.",
     href: "/resources/swot-analysis",
-  }
+  },
 ];
 
 export default function ResourcesPage() {
